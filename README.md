@@ -39,9 +39,9 @@ I used the Flask-Python framework to implement this project and control the app 
 
 #### database Design
 The database is a very simple one-to-many relational database with two tables.
-Student table to store students' data columns >id, academic mail, name, password, and score.
+Student table to store students' data columns (id, academic mail, name, password, and score).
  
-projects table referencing students' table on the id column to store projects of each student columns > id, id_projects, and projects.
+projects table referencing students' table on the id column to store projects of each student columns (id, id_projects, and projects).
 
 
 

@@ -1,0 +1,59 @@
+{% extends "alayout.html" %}
+
+{% block title %}
+Admin Upload
+{%endblock %}
+
+{% block main %}
+
+
+<div class="titleh"><h1>Final Project Selection</h1></div>
+
+<div class="header">
+    <h1></h1><span style="color: steelblue;">Welcome, </span>Admin</h1>
+    <h3 style="color: white;">Here you can Uplaod student data</h3>
+</div>
+
+<div class="pdata">
+    <h3>Upload student data file</h3>
+    <form action="/admin/upload"  method="post"  enctype="multipart/form-data" >
+        <label for="csv">Upload csv file here:</label>
+        <input type="file" name="csv"><br><br>
+        <input  class="formbutton"  style="position:none; bottom: 0vh; left:0vw;" type="submit" value="Submit">
+    </form>
+</div>
+
+<div class="instruct">
+    <ul>
+        <h4 style="color: steelblue;">Instraction</h4>
+        <li>the file data must be arranged as follow : (academic mail, name, score) #important</li>
+        <li>The file must be csv file format with only one "," separte each value in the raw</li>
+        <li>The file must have title row represent each column title</li>
+    </ul>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let nav = document.querySelector(".mainnav");
+        nav.style.top = "5%";
+
+        
+        let btns = document.querySelector("#btns")
+            btns.style.position = "relative"; 
+            btns.style.top = "50px";
+    });
+
+    const currentlocation = location.href;
+    const tabs = document.querySelectorAll("a");
+    const tabslength = tabs.length;
+    for (i = 0; i < tabslength; i++)
+    {
+        if(tabs[i].href == currentlocation)
+        {
+            
+            tabs[i].className = "active";
+        }
+    }
+</script>
+{%endblock%}

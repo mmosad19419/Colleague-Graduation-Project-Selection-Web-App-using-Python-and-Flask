@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Log In
+{%endblock %}
+
+
+{% block ptitle %}<div class="mainname"><p>Final Project Selection</p></div>{% endblock %}
+
+
+{% block main %}
+<div class="form">
+<form action="/login" method="post">
+    <div class="form-group">
+        <input class="forminput" autocomplete="off" autofocus name="mail" placeholder="Academic mail" type="text">
+    </div>
+    <div class="form-group">
+        <input class="forminput" autocomplete="off"  name="password" placeholder="Passward" type="password">
+    </div>
+    <button class="formbutton" type="submit">Log in</button>
+</form>
+</div>
+
+<script>
+    const currentlocation = location.href;
+    const tabs = document.querySelectorAll("a");
+    const tabslength = tabs.length;
+    for (i = 0; i < tabslength; i++)
+    {
+        if(tabs[i].href == currentlocation)
+        {
+            
+            tabs[i].className = "active";
+        }
+    }
+</script>
+{%endblock main%}

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block title%}
+Edit Selected projects
+{% endblock %}
+
+{% block main %}
+
+<div class="selecth"><h3>Edit your Selected Projects</h3></div>
+
+<div class="selectblock">
+
+<form action="/edit" method="post">
+
+{% for i in nprojects %}
+<label for="project{{i}}">project {{i}}:</label>
+<select name="project{{i}}">
+    <option value="Projects" selected>Choose Project</option>
+
+    {% for project in projects %}
+    <option value="{{project}}">{{project}}</option>
+    {% endfor %}
+
+</select>
+{% endfor %}
+
+<button class="formbutton" type="submit">Submit</button>
+</form>
+</div>
+
+<div class="instruct">
+    <ul>
+        <h4 style="color: steelblue;">Instraction</h4>
+        <li>Arrange your projects from Most preffered to less prefered</li>
+        <li>You should choose different projects if not this will affect your result</li>
+        <li>Selection will be done according to each student score</li>
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let nav = document.querySelector(".mainnav");
+        nav.style.top = "5%";});
+
+    const currentlocation = location.href;
+    const tabs = document.querySelectorAll("a");
+    const tabslength = tabs.length;
+    for (i = 0; i < tabslength; i++)
+    {
+        if(tabs[i].href == currentlocation)
+        {
+            
+            tabs[i].className = "active";
+        }
+    }
+</script>
+{% endblock %}

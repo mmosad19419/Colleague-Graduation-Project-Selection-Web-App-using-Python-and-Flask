@@ -1,0 +1,53 @@
+{% extends "alayout.html" %}
+
+{% block title %}
+Admin Home
+{%endblock %}
+
+{% block main %}
+
+
+<div class="titleh"><h1>Final Project Selection</h1></div>
+
+<div class="header">
+    <h1></h1><span style="color: steelblue;">Welcome, </span>Admin</h1>
+    <h3 style="color: white;">Here you can control the website data and Operations</h3>
+</div>
+
+<div class="pdata">
+    <p><b style="color: steelblue;">Total number of student</b><br>  {{tstudents}}</p>
+    <p><b style="color: steelblue;">Total number of registered students</b><br>  {{registered}}</p>
+    <p><b style="color: steelblue;">Total number of student who fill Their selections</b><br>  {{fstudents}}</p>
+    
+</div>
+
+<div id="btns">
+    <a class="hbutton" href="/admin/upload">Upload students data</a>
+
+    <a class="hbutton" href="/admin/result">Calculate Result</a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let nav = document.querySelector(".mainnav");
+        nav.style.top = "5%";
+
+        
+        let btns = document.querySelector("#btns")
+            btns.style.position = "relative"; 
+            btns.style.top = "50px";
+    });
+
+    const currentlocation = location.href;
+    const tabs = document.querySelectorAll("a");
+    const tabslength = tabs.length;
+    for (i = 0; i < tabslength; i++)
+    {
+        if(tabs[i].href == currentlocation)
+        {
+            
+            tabs[i].className = "active";
+        }
+    }
+</script>
+{%endblock%}

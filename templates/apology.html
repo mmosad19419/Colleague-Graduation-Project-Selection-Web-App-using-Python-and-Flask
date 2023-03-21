@@ -1,0 +1,23 @@
+{% extends "alayout.html" %}
+
+{% block title %}
+Error message
+{%endblock %}
+
+{% block main %}
+<div class="error">
+<form action="/{{route}}" method="get">
+    <div class="form-group">
+        <h2 style="color: steelblue;">Error {{code}}</h2>
+        <p>{{message}}</p>
+    </div>
+    <button class="errorbutton" type="submit">Back to {{route}}</button>
+</form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let nav = document.querySelector(".mainnav");
+        nav.style.top = "5%";});
+</script>
+{%endblock main%}

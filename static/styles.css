@@ -1,0 +1,348 @@
+/* main body css */
+.main {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: Helvetica, serif;
+    font-size: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* navigation bar css */
+.navbar {
+    height: 100vh;
+    width: 20%;
+    position: sticky;
+    background-color: steelblue;
+    color: rgb(255, 255, 255);
+    font-size: .5em;
+    text-align: left;
+    display: block;
+}
+
+
+.mainname {
+    position: absolute;
+    top: 5vh;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    text-align: left; 
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+.mainnav {
+    position: absolute;
+    top:15%;
+    left:0px;
+    display: block;
+    height: 20px;
+    width: 20vw;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.content {
+    display: inline-block;
+    line-height: 10px;
+    position: relative;
+    left: -40px;
+    height: 20px;
+    width: 20vw;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: steelblue;
+    text-decoration: none;
+}
+
+
+.content:hover {
+    background-color: white;
+    color: steelblue;
+    text-decoration: none;
+    border-style: none;
+    
+}
+
+.active {
+    display: inline-block;
+    line-height: 10px;
+    position: relative;
+    left: -40px;
+    height: 20px;
+    width: 20vw;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    color: steelblue;
+}
+
+.active:hover {
+    text-decoration: none;
+    border-style: none;
+    color: steelblue;
+}
+
+/* form css */
+.form {
+    width:40vw;
+    height: 40vh;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+.forminput {
+    display: block;
+    width: 20vw;
+    height: 5vh;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 15px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.forminput:focus {
+    outline: none;
+    border-color: steelblue;
+    box-shadow: 2px 2px skyblue, -2px -2px skyblue, -2px 2px skyblue, 2px -2px skyblue;
+}
+
+.formbutton {
+    display: block;
+    position: relative;
+    left: 5vw;
+    color: snow;
+    background-color: steelblue;
+    border-style: none;
+    border-radius: 0.25rem;
+    width: 10vw;
+    height: 5vh;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.admin {
+    display: inline-block;
+    line-height: 8px;
+    position: relative;
+    left: -40px;
+    top: 40vh;
+    height: 20px;
+    width: 20vw;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: steelblue;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.admin:hover {
+    background-color: white;
+    color: steelblue;
+    text-decoration: none;
+}
+
+/* logout */
+.logout {
+    display: inline-block;
+    line-height: 8px;
+    position: relative;
+    left: -40px;
+    top: 19vh;
+    height: 20px;
+    width: 20vw;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: steelblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.logout:hover {
+    background-color: white;
+    color: steelblue;
+    text-decoration: none;
+}
+
+
+button:hover {
+    background-color: rgb(0, 137, 179);
+}
+
+.error {
+    width:40vw;
+    height: 40vh;
+    max-height: 50vh;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 30px;
+    
+}
+
+.errorbutton {
+    display: block;
+    color: snow;
+    background-color: steelblue;
+    border-style: none;
+    border-radius: 0.25rem;
+    width: 10vw;
+    height: 5vh;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* home page css */
+.titleh{
+    width: 50%;
+    height:60px;
+    position: absolute;
+    float: left;
+    left: 25%;
+    top: 11.5%;
+    color: steelblue;
+    font-size: 40px;
+}
+
+
+.header {
+    width: 50%;
+    height:60px;
+    position: absolute;
+    float: left;
+    left: 25%;
+    top: 20%;
+    color: black;
+    font-size: 40px;
+}
+
+.pdata {
+    width:50%;
+    height: 30vh;
+    position: absolute;
+    top: 32%;
+    left: 25vw;
+    color: black;
+    font-size: 20px;
+}
+
+.pdata2 {
+    width:30%;
+    height: 30vh;
+    position: absolute;
+    top: 0%;
+    left: 35vw;
+    color: black;
+    font-size: 20px;
+}
+
+.projectsp {
+    width:50%;
+    height: 20vh;
+    position: relative;
+    bottom: 55vh;
+    left: 25vw;
+    color: black;
+    font-size: 15px;
+}
+
+.projectsp ul {
+    list-style-type: decimal;
+    list-style-position: inside;
+    display: inline-table;
+    padding: 5px;
+    padding-top: 0px;
+    font-size: 18px;
+}
+
+.projectsp h4 {
+    color: steelblue;
+}
+
+
+.instruct {
+    width:15vw;
+    height: 50vh;
+    position: absolute;
+    top: 15%;
+    float: right;
+    right: 5%;
+    color: black;
+    font-size: 15px;
+    border-left: 1px solid black;
+}
+
+.instruct li {
+    margin: 20px;
+}
+
+
+.hbutton {
+    display: inline;
+    position: relative;
+    left: 25vw;
+    bottom: 40vh;
+    color: snow;
+    background-color: steelblue;
+    border-style: none;
+    border-radius: 0.25rem;
+    width: 5vw;
+    height: 5vh;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.hbutton:hover {
+    color: white;
+    background-color: rgb(0, 137, 179);
+    text-decoration: none;
+}
+
+
+
+/* select.html css */ 
+.selecth {
+    height: 10vh;
+    width: 50vw;
+    position: absolute;
+    top: 12.5vh;
+    left: 25%;
+    color: steelblue;
+}
+.selectblock {
+    display: block;
+    width: 40vw;
+    height: 40vh;
+    color: steelblue;
+    position: absolute;
+    float: left;
+    left: 25%;
+    top: 20%;
+    color: black;
+    font-size: 30px;
+}
+
+.selectblock label {
+    display: inline-table;
+    font-size: 20px;
+    margin-top: 10px;
+    height: 1vh;
+}
+
+.selectblock select {
+    font-size: 20px;
+}
+
+.selectblock button {
+    position: absolute;
+    top: 59vh;
+    left: 0%;
+}

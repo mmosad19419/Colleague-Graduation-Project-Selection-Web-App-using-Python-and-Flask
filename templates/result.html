@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Homepage
+{%endblock %}
+
+{% block main %}
+
+
+<div class="titleh"><h1>Final Project Selection</h1></div>
+
+<div class="header">
+    <h1></h1><span style="color: steelblue;">Welcome, </span>{{student.name}}</h1>
+    <h3 style="color: white;">Wish you best of luck in your final year Project</h3>
+</div>
+
+<div class="pdata">
+    <p><b style="color: steelblue;">Your Final Year Projects is</b><br>{{student.final}}</p><br>
+</div>
+
+<div class="instruct">
+    <ul>
+        <h4 style="color: steelblue;">Info</h4>
+        <li>This is your projects from selection according to score</li>
+        <li>Wish you Best of luck</li>
+    </ul>
+</div>
+
+<div>
+    <a style="bottom: 56.5vh;"   class="hbutton"href="/">Back to home</a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let nav = document.querySelector(".mainnav");
+        nav.style.top = "5%";});
+
+    const currentlocation = location.href;
+    const tabs = document.querySelectorAll("a");
+    const tabslength = tabs.length;
+    for (i = 0; i < tabslength; i++)
+    {
+        if(tabs[i].href == currentlocation)
+        {
+            
+            tabs[i].className = "active";
+        }
+    }
+</script>
+{%endblock%}

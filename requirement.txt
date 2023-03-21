@@ -1,0 +1,6 @@
+Libraries for application.py: os, cs50, werkzeug.utils, Flask, flask_session, math
+Libraries for helpers.py: sqlite3, pathlib, os, cs50, csv, functools, flask
+
+using Python-Flask web application frame work
+
+students database
